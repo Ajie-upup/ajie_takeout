@@ -18,20 +18,34 @@ import java.sql.SQLIntegrityConstraintViolationException;
 public class GlobalExceptionHandler {
 
     /**
-     * 异常处理方法
+     * 当输入得数据在数据库中已经存在时处理
+     *
      * @return
      */
     @ExceptionHandler(SQLIntegrityConstraintViolationException.class)
-    public R<String> exceptionHandler(SQLIntegrityConstraintViolationException ex){
+    public R<String> exceptionHandler(SQLIntegrityConstraintViolationException ex) {
         log.error(ex.getMessage());
 
         //判断是否为该异常（包含Duplicate entry）
-        if(ex.getMessage().contains("Duplicate entry")){
+        if (ex.getMessage().contains("Duplicate entry")) {
             String[] split = ex.getMessage().split(" ");
-            String msg = split[2] + "用户已存在";
+            String msg = split[2] + "已存在";
             return R.error(msg);
         }
-
         return R.error("未知错误");
     }
+
+    /**
+     * 处理自定义异常信息 -----  CustomException
+     *
+     * @param ex
+     * @return
+     */
+    @ExceptionHandler(CustomException.class)
+    public R<String> exceptionHandler(CustomException ex) {
+        log.error(ex.getMessage());
+
+        return R.error(ex.getMessage());
+    }
+
 }

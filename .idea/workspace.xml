@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="920dce6a-5735-4f4e-a527-4b79467faa2a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/common/BaseContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/common/MyMetaObjecthandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/common/CustomException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/mapper/CategoryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/mapper/DishMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/mapper/SetmealMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/service/DishService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/service/SetmealService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/service/impl/DishServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/service/impl/SetmealServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ajie/common/JacksonObjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ajie/common/JacksonObjectMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ajie/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ajie/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ajie/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ajie/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ajie/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ajie/filter/LoginCheckFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ajie/common/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ajie/common/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ajie/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ajie/entity/Category.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,10 +80,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\1project\ajie_takeout\src\main\java\com\ajie\common" />
+      <recent name="E:\1project\ajie_takeout\src\main\java\com\ajie\service\impl" />
+      <recent name="E:\1project\ajie_takeout\src\main\java\com\ajie\service" />
+      <recent name="E:\1project\ajie_takeout\src\main\java\com\ajie\mapper" />
       <recent name="E:\1project\ajie_takeout\src\main\java\com\ajie\config" />
-      <recent name="E:\1project\ajie_takeout\src\main\java\com\ajie\filter" />
-      <recent name="E:\1project\ajie_takeout\src\main\java\com\ajie\controller" />
-      <recent name="E:\1project\ajie_takeout\src\main\java\com\ajie\pojo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\1project\ajie_takeout\src\main\resources" />
@@ -113,7 +120,7 @@
       <workItem from="1664530938008" duration="630000" />
       <workItem from="1664622078314" duration="109000" />
       <workItem from="1664623603117" duration="7153000" />
-      <workItem from="1664677562272" duration="13361000" />
+      <workItem from="1664677562272" duration="19854000" />
     </task>
     <task id="LOCAL-00001" summary="10.1 完成了员工登录和退出功能">
       <created>1664677800875</created>
@@ -143,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664696287291</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="设置公共字段自动填充BaseContext @tableFile注解">
+      <created>1664700344569</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664700344569</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +168,18 @@
     <MESSAGE value="配置拦截器，拦截用户登录范围请求" />
     <MESSAGE value="1.完成新增员工的功能，注意员工存在sql查询报错，需要配置一个全局的异常处理器拦截异常&#10;2.利用MybatisPlus分页插件完成分页查询功能，添加查询操作需要添加参数，提前检测是否为空" />
     <MESSAGE value="1.管理员启用，禁用员工状态，配置对象映射器，序列化Java对象，防止精度丢失&#10;2.根据id查询单个员工信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.管理员启用，禁用员工状态，配置对象映射器，序列化Java对象，防止精度丢失&#10;2.根据id查询单个员工信息" />
+    <MESSAGE value="设置公共字段自动填充BaseContext @tableFile注解" />
+    <option name="LAST_COMMIT_MESSAGE" value="设置公共字段自动填充BaseContext @tableFile注解" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ajie/service/impl/CategoryServiceImpl.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
