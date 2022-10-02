@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920dce6a-5735-4f4e-a527-4b79467faa2a" name="Changes" comment="" />
+    <list default="true" id="920dce6a-5735-4f4e-a527-4b79467faa2a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/filter/LoginCheckFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ajie/TakeOutApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ajie/TakeOutApplication.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +21,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -35,6 +42,7 @@
     <option name="vmOptions" value="-Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true -Dmaven.wagon.http.ssl.ignore.validity.dates=true -DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectId" id="2FTzbmajZpqTObk4LORXPxg2X3W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,21 +57,22 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "SELECTIVE",
-    "last_opened_file_path": "E:/1project/ajie_takeout/src/main/java/com/ajie/controller",
+    "last_opened_file_path": "E:/1project/ajie_takeout/src/main/java/com/ajie/filter",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "editor.preferences.import"
+    "settings.editor.selected.configurable": "editor.preferences.import",
+    "spring.configuration.checksum": "e7bc68ba81084ea97fc245f6e9f8d790"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\1project\ajie_takeout\src\main\java\com\ajie\filter" />
       <recent name="E:\1project\ajie_takeout\src\main\java\com\ajie\controller" />
       <recent name="E:\1project\ajie_takeout\src\main\java\com\ajie\common" />
       <recent name="E:\1project\ajie_takeout\src\main\java\com\ajie\pojo" />
       <recent name="E:\1project\ajie_takeout\src\main\resources\static" />
-      <recent name="E:\1project\ajie_takeout\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\1project\ajie_takeout\src\main\resources" />
@@ -100,10 +109,23 @@
       <workItem from="1664530938008" duration="630000" />
       <workItem from="1664622078314" duration="109000" />
       <workItem from="1664623603117" duration="7153000" />
+      <workItem from="1664677562272" duration="1865000" />
     </task>
+    <task id="LOCAL-00001" summary="10.1 完成了员工登录和退出功能">
+      <created>1664677800875</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664677800875</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="10.1 完成了员工登录和退出功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="10.1 完成了员工登录和退出功能" />
   </component>
 </project>
