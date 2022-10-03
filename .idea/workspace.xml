@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920dce6a-5735-4f4e-a527-4b79467faa2a" name="Changes" comment="新增菜品分类和套餐分类，注意，如果菜品或者套餐下面有数据，则不能删除，修改和删除分类">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/controller/CommonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/backend/page/demo/upload.html" afterDir="false" />
+    <list default="true" id="920dce6a-5735-4f4e-a527-4b79467faa2a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/controller/DishController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/entity/dto/DishDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/mapper/DishFlavorMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/service/DishFlavorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/service/impl/DishFlavorServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ajie/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ajie/filter/LoginCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ajie/TakeOutApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ajie/TakeOutApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ajie/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ajie/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ajie/entity/Dish.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ajie/entity/Dish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ajie/entity/DishFlavor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ajie/entity/DishFlavor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ajie/service/DishService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ajie/service/DishService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ajie/service/impl/DishServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ajie/service/impl/DishServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +119,8 @@
       <workItem from="1664622078314" duration="109000" />
       <workItem from="1664623603117" duration="7153000" />
       <workItem from="1664677562272" duration="21157000" />
-      <workItem from="1664760021477" duration="2665000" />
+      <workItem from="1664760021477" duration="5683000" />
+      <workItem from="1664785160017" duration="4387000" />
     </task>
     <task id="LOCAL-00001" summary="10.1 完成了员工登录和退出功能">
       <created>1664677800875</created>
@@ -156,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664714585261</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="文件得上传和下载-----通过流得方式将图片在浏览器显示">
+      <created>1664782001369</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1664782001369</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +184,8 @@
     <MESSAGE value="1.管理员启用，禁用员工状态，配置对象映射器，序列化Java对象，防止精度丢失&#10;2.根据id查询单个员工信息" />
     <MESSAGE value="设置公共字段自动填充BaseContext @tableFile注解" />
     <MESSAGE value="新增菜品分类和套餐分类，注意，如果菜品或者套餐下面有数据，则不能删除，修改和删除分类" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增菜品分类和套餐分类，注意，如果菜品或者套餐下面有数据，则不能删除，修改和删除分类" />
+    <MESSAGE value="文件得上传和下载-----通过流得方式将图片在浏览器显示" />
+    <option name="LAST_COMMIT_MESSAGE" value="文件得上传和下载-----通过流得方式将图片在浏览器显示" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
