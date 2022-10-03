@@ -4,21 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920dce6a-5735-4f4e-a527-4b79467faa2a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/common/CustomException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/mapper/CategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/mapper/DishMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/mapper/SetmealMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/service/DishService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/service/SetmealService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/service/impl/DishServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/service/impl/SetmealServiceImpl.java" afterDir="false" />
+    <list default="true" id="920dce6a-5735-4f4e-a527-4b79467faa2a" name="Changes" comment="新增菜品分类和套餐分类，注意，如果菜品或者套餐下面有数据，则不能删除，修改和删除分类">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ajie/controller/CommonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/backend/page/demo/upload.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ajie/common/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ajie/common/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ajie/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ajie/entity/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ajie/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ajie/filter/LoginCheckFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,32 +49,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "SELECTIVE",
-    "last_opened_file_path": "E:/1project/ajie_takeout/src/main/java/com/ajie/common",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "editor.preferences.import",
-    "spring.configuration.checksum": "e7bc68ba81084ea97fc245f6e9f8d790"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable&quot;: &quot;SELECTIVE&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/1project/ajie_takeout/src/main/resources/backend/page&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.import&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e7bc68ba81084ea97fc245f6e9f8d790&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\1project\ajie_takeout\src\main\resources\backend\page" />
       <recent name="E:\1project\ajie_takeout\src\main\java\com\ajie\common" />
       <recent name="E:\1project\ajie_takeout\src\main\java\com\ajie\service\impl" />
       <recent name="E:\1project\ajie_takeout\src\main\java\com\ajie\service" />
       <recent name="E:\1project\ajie_takeout\src\main\java\com\ajie\mapper" />
-      <recent name="E:\1project\ajie_takeout\src\main\java\com\ajie\config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\1project\ajie_takeout\src\main\resources" />
@@ -120,7 +111,8 @@
       <workItem from="1664530938008" duration="630000" />
       <workItem from="1664622078314" duration="109000" />
       <workItem from="1664623603117" duration="7153000" />
-      <workItem from="1664677562272" duration="19854000" />
+      <workItem from="1664677562272" duration="21157000" />
+      <workItem from="1664760021477" duration="2665000" />
     </task>
     <task id="LOCAL-00001" summary="10.1 完成了员工登录和退出功能">
       <created>1664677800875</created>
@@ -157,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664700344569</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="新增菜品分类和套餐分类，注意，如果菜品或者套餐下面有数据，则不能删除，修改和删除分类">
+      <created>1664714585261</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664714585261</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +168,8 @@
     <MESSAGE value="1.完成新增员工的功能，注意员工存在sql查询报错，需要配置一个全局的异常处理器拦截异常&#10;2.利用MybatisPlus分页插件完成分页查询功能，添加查询操作需要添加参数，提前检测是否为空" />
     <MESSAGE value="1.管理员启用，禁用员工状态，配置对象映射器，序列化Java对象，防止精度丢失&#10;2.根据id查询单个员工信息" />
     <MESSAGE value="设置公共字段自动填充BaseContext @tableFile注解" />
-    <option name="LAST_COMMIT_MESSAGE" value="设置公共字段自动填充BaseContext @tableFile注解" />
+    <MESSAGE value="新增菜品分类和套餐分类，注意，如果菜品或者套餐下面有数据，则不能删除，修改和删除分类" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增菜品分类和套餐分类，注意，如果菜品或者套餐下面有数据，则不能删除，修改和删除分类" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
